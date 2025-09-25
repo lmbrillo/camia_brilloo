@@ -1,0 +1,38 @@
+flowchart of my proj
+
+different format flowchart
+its a flowchart
+
+    A[Start: User Opens Planner] --> B[Login / Register]
+    B -->|New User| C[Create Profile: Goals & Preferences]
+    B -->|Existing User| D[Load Profile]
+
+    C --> E[Task Input: Add Assignments, Exams, Deadlines]
+    D --> E
+
+    E --> F[Automatic Scheduling Algorithm]
+    F --> G[Generate Daily/Weekly Plan]
+
+    G --> H{User Adjusts Schedule?}
+    H -->|Yes| I[Manual Adjustments via CLI]
+    H -->|No| J[Accept Generated Plan]
+
+    I --> J
+
+    J --> K[Start Study Session]
+    K --> L[Session Timer & Task Tracking]
+
+    L --> M[Log Progress in Database]
+    M --> N[Adaptive Planning Algorithm]
+    N --> O[Re-Prioritize & Update Schedule]
+
+    O --> P{Deadline Approaching?}
+    P -->|Yes| Q[Send Console Reminder]
+    P -->|No| R[Continue]
+
+    Q --> R
+    R --> S[Show Updated Schedule]
+
+    S --> T{All Tasks Completed?}
+    T -->|Yes| U[End: Show Summary & Analytics]
+    T -->|No| E[Add New or Pending Tasks]
