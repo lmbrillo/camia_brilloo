@@ -1,0 +1,75 @@
+
+Smart Study Planner: A Python-Powered Time Management Tool for Students
+
+1. Problem Statement
+
+Many students struggle with effective time management due to unorganized study schedules, conflicting deadlines, and a lack of personalized guidance. This project aims to solve this by creating a smart, adaptive study planner that generates personalized schedules, provides intelligent reminders, and automatically adjusts plans based on a student's real-time progress. The entire application, from the front-end to the back-end, will be built exclusively in Python to maintain a unified and simplified technology stack.
+
+2. Core Features
+
+User Management
+
+• Registration & Login: Secure user accounts managed entirely by Python.
+
+• Profile: User details, learning preferences, and academic goals stored and retrieved using Python.
+
+Task and Schedule Management
+
+• Task Input: Add tasks, assignments, and exams with details like subject, due date, estimated completion time, and priority level.
+
+• Automatic Scheduling: A core Python algorithm will generate a daily and weekly study plan based on task priorities, deadlines, and user-defined preferences.
+
+• Manual Adjustments: Allow users to manually modify the generated schedule through a Python-driven interface.
+
+• Deadline Reminders: Python scripts will handle sending notifications for upcoming deadlines and study sessions.
+
+Progress Tracking and AI Integration
+
+• Session Tracking: A built-in timer, controlled by Python, will track actual study time for each task.
+
+• Progress Log: Users can log their progress on tasks, with data stored and processed by Python.
+
+• Adaptive Planning: The central AI feature, a Python-based rules engine, will use logged progress and completed session data to:
+
+• Re-prioritize remaining tasks.
+
+• Adjust the schedule if a task is taking longer than estimated.
+
+• Suggest optimal times for review based on a student's past performance.
+
+3. Technical Stack
+
+• Web Framework: Python, leveraging a full-stack framework like Django or Flask to handle all server-side logic and render the entire front-end user interface using Python's built-in templating engines.
+
+• Database: A Python-friendly SQL database, such as SQLite for development, or PostgreSQL with a Python library like psycopg2 for a more robust production environment. All database interactions will be handled by a Python Object-Relational Mapper (ORM).
+
+• AI/Logic: Python will be used for all scheduling algorithms and adaptive planning logic. Libraries like pandas or scikit-learn could be used for more advanced data analysis or simple predictive models if the project scales.
+
+4. Development Milestones
+
+• Phase 1: Core Functionality
+
+• User registration and login.
+
+• Basic CRUD (Create, Read, Update, Delete) for tasks.
+
+• Simple, non-AI schedule generation (e.g., prioritizing tasks by due date).
+
+• Basic UI for viewing the schedule, rendered directly by Python.
+
+• Phase 2: AI Integration
+
+• Implement a study timer to log session duration.
+
+• Develop the core adaptive planning algorithm.
+
+• Integrate progress logging and real-time schedule adjustments.
+
+• Phase 3: Polishing and Analytics
+
+• Build a dashboard with analytics (e.g., total study time per week, subjects studied).
+
+• Refine the user interface and overall user experience.
+
+• Implement a robust notification system.
+
