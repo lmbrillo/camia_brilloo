@@ -1,0 +1,150 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Page-1" id="nS9cbgPq5GOaSqxer4uG">
+    <mxGraphModel dx="4357" dy="2912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uuoohaSyUWSSlMv0Th47-2" value="&lt;pre&gt;&lt;b&gt;&lt;font face=&quot;Tahoma&quot;&gt;FLOWCHART FOR MENU&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-1160" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-3" target="uuoohaSyUWSSlMv0Th47-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="-975" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-3" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-1090" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-7" target="uuoohaSyUWSSlMv0Th47-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-7" value="&amp;nbsp;displays &quot;Main Menu:&lt;div&gt;1. Add task&lt;/div&gt;&lt;div&gt;2. View Schedule&lt;/div&gt;&lt;div&gt;3. Complete task&quot;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-1005" width="210" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-8" target="uuoohaSyUWSSlMv0Th47-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-8" target="uuoohaSyUWSSlMv0Th47-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-8" target="uuoohaSyUWSSlMv0Th47-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-8" value="inputs choice" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="-910" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-10" target="uuoohaSyUWSSlMv0Th47-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-10" value="if input == 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="-840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-12" target="uuoohaSyUWSSlMv0Th47-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-12" value="displays &quot; Enter Subject name&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="-720" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-14" target="uuoohaSyUWSSlMv0Th47-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-14" value="user inputs subject name" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-650" width="170" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-16" target="uuoohaSyUWSSlMv0Th47-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-16" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 13px; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; text-align: start;&quot; class=&quot;p1&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;display &quot;Enter Due Date&quot;&lt;/font&gt;&lt;/p&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-570" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-18" target="uuoohaSyUWSSlMv0Th47-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-18" value="user inputs due date" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="-480" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-20" target="uuoohaSyUWSSlMv0Th47-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-20" value="displays &quot;Priority level (3=low, 1= high)&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="-390" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-22" target="uuoohaSyUWSSlMv0Th47-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-22" value="user inputs priority level" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-310" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-24" target="uuoohaSyUWSSlMv0Th47-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-24" value="displays &quot;Pending? (Y/N)?&quot;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-220" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-26" target="uuoohaSyUWSSlMv0Th47-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-26" value="user inputs y/n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="-140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-28" target="uuoohaSyUWSSlMv0Th47-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-28" value="stop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="-10" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-32" target="uuoohaSyUWSSlMv0Th47-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-32" value="if input == 2" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-125" y="-930" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-34" target="uuoohaSyUWSSlMv0Th47-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-34" value="displays list of tasks&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ex.&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;1|English Quiz Review|2025-11-20|3|1|Pending&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2|CS2 LONG QUIZ Review|2025-11-15|1|2|Pending&lt;/div&gt;&lt;div&gt;3|Algebra Homework|2025-11-18|2|1|Completed&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="-940" width="375" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-36" target="uuoohaSyUWSSlMv0Th47-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-36" value="if input == 3" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-930" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-38" target="uuoohaSyUWSSlMv0Th47-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-38" value="displays pending tasks&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="-920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-42" target="uuoohaSyUWSSlMv0Th47-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-42" value="user will input the ID of the task that is pending that he wants to mark as complete" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="-950" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-44" target="uuoohaSyUWSSlMv0Th47-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-44" value="user inputs the word &quot;Complete&quot; to mark the task as complete" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="-940" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-48" value="x" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="-930" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-50" value="x" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="-25" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uuoohaSyUWSSlMv0Th47-54" target="uuoohaSyUWSSlMv0Th47-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-54" value="break" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-887.5" y="-920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uuoohaSyUWSSlMv0Th47-56" value="x" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1067.5" y="-930" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
