@@ -1,75 +1,89 @@
-
-Smart Study Planner: A Python-Powered Time Management Tool for Students
+Student-Friendly Study Planner: A Python-runned Time Management Tool for Students!
 
 1. Problem Statement
 
-Many students struggle with effective time management due to unorganized study schedules, conflicting deadlines, and a lack of personalized guidance. This project aims to solve this by creating a smart, adaptive study planner that generates personalized schedules, provides intelligent reminders, and automatically adjusts plans based on a student's real-time progress. The entire application, from the front-end to the back-end, will be built exclusively in Python to maintain a unified and simplified technology stack.
+Many students struggle with effective time management due to unorganized study schedules and conflicting deadlines. 
+My Study Planner project addresses this by creating a simple, text-based study planner that generates rule-based schedules and provides guidance for students struggling to figure out which to do first like me. 
+The entire application will be built exclusively in Python, utilizing its library features instead of complex databases to manage data and user interaction.
 
 2. Core Features
 
-User Management
+I envision the application being operated as a simple Python script, designed to accept simple inputs to run the program without problems.
 
-• Registration & Login: Secure user accounts managed entirely by Python.
+Data Storage (Schedules, Deadlinesn etc.) 
 
-• Profile: User details, learning preferences, and academic goals stored and retrieved using Python.
+- All task data will be stored in a single plain text file (tasks.txt).
 
-Task and Schedule Management
+- Each task will be saved as a single line of text where values are separated by a delimiter ( a comma or pipe |).
 
-• Task Input: Add tasks, assignments, and exams with details like subject, due date, estimated completion time, and priority level.
+- To convert between the files text lines and the data structures, I will be using Python's string manipulation methods such as split(), join(), and strip().
 
-• Automatic Scheduling: A core Python algorithm will generate a daily and weekly study plan based on task priorities, deadlines, and user-defined preferences.
+Task Structure and how It will manage tasks:
 
-• Manual Adjustments: Allow users to manually modify the generated schedule through a Python-driven interface.
+Task Input: When the script runs to add a task, it will prompt the user for the following details, which will be saved as a string to the tasks.txt file that will be storing the data:
 
-• Deadline Reminders: Python scripts will handle sending notifications for upcoming deadlines and study sessions.
+ID (This will be the unique identifier for the task of the student)
 
-Progress Tracking and AI Integration
+Subject (str)
 
-• Session Tracking: A built-in timer, controlled by Python, will track actual study time for each task.
+Due Date (str: YYYY-MM-DD)
 
-• Progress Log: Users can log their progress on tasks, with data stored and processed by Python.
+Estimated Time (Hours) (in int)
 
-• Adaptive Planning: The central AI feature, a Python-based rules engine, will use logged progress and completed session data to:
+Priority (int: 1=High, 3=Low)
 
-• Re-prioritize remaining tasks.
+Status (str: Pending/Completed)
 
-• Adjust the schedule if a task is taking longer than estimated.
+Schedule Generation: The script will read all lines from tasks.txt and this will hopefully immediately sort and display the schedule made by the student.
 
-• Suggest optimal times for review based on a student's past performance.
+Rule-Based Logic
 
-3. Technical Stack
+Prioritization Function: The scheduling logic will be a function that sorts the list of pending tasks. The sorting will be based on two criteria: due date proximity (earliest first) and then priority level (lowest number first).
 
-• Web Framework: Python, leveraging a full-stack framework like Django or Flask to handle all server-side logic and render the entire front-end user interface using Python's built-in templating engines.
+The Output would look something like this:
 
-• Database: A Python-friendly SQL database, such as SQLite for development, or PostgreSQL with a Python library like psycopg2 for a more robust production environment. All database interactions will be handled by a Python Object-Relational Mapper (ORM).
+1|English Quiz Review|2025-11-20|3|1|Pending
+2|CS2 LONG QUIZ Review|2025-11-15|1|2|Pending
+3|Algebra Homework|2025-11-18|2|1|Completed
 
-• AI/Logic: Python will be used for all scheduling algorithms and adaptive planning logic. Libraries like pandas or scikit-learn could be used for more advanced data analysis or simple predictive models if the project scales.
+3. Technical Stack:
+
+Interface: The interface will be displayed using standard print() for outputs and input() for receiving data. The script will run, prompt the user with options whether to add a task or to view the schedule they've made (e.g., Add Task or View Schedule).
+
+Data Structures: The task data will be held inside the script as Lists of Dictionaries, a simple structure used for sorting and processing the information.
+
+Core Logic:
+
+File I/O: Reading and writing to files using methods like open(), read(), write(), and close().
+
+String Manipulation: I'll use core Python methods like split(), join(), and find() to reliably change the task information between being a simple text line (for the txt.file storing the data from the user) and a structured list (for the program to display the schedule).
+
+Datetime Operations: The datetime module will be used to correctly interpret the due dates to accurately sort and to determine which one is more important.
 
 4. Development Milestones
 
-• Phase 1: Core Functionality
+These steps ensure a progression from a simple text file storage from the user inputs to being able to output functional scheduling logic.
 
-• User registration and login.
+Phase 1: Basic File Handling
 
-• Basic CRUD (Create, Read, Update, Delete) for tasks.
+To implement the ability to read all lines from the tasks.txt file, I'll use the with open('tasks.txt', 'r') as f: statement and the f.readlines() method.
 
-• Simple, non-AI schedule generation (e.g., prioritizing tasks by due date).
+To implement the ability to add a new task, I will be taking user input and adding a new formatted string line to tasks.txt using the with open('tasks.txt', 'a') as f: statement and the f.write() method.
 
-• Basic UI for viewing the schedule, rendered directly by Python.
+To develop robust error handling for file access and input validation (e.g. checking if the file exists) using try...except blocks.
 
-• Phase 2: AI Integration
+Phase 2: Data Translation and Display
 
-• Implement a study timer to log session duration.
+To create a function to parse a single text line (string) into a dictionary. I will use the string.split('|') method to separate the data, ensuring type casting (converting string numbers to integers) is performed correctly.
 
-• Develop the core adaptive planning algorithm.
+To create a function to save a dictionary back into a text line. I'll use the '|'.join(list_of_values) method to combine the fields.
 
-• Integrate progress logging and real-time schedule adjustments.
+This will display the raw list of tasks by reading the file, parsing the data, and printing the results in a formatted, columnar layout to the console.
 
-• Phase 3: Polishing and Analytics
+Phase 3: Scheduling Logic
 
-• Build a dashboard with analytics (e.g., total study time per week, subjects studied).
+To integrate the datetime module, I will be using the datetime.strptime() to convert the string due dates into actual datetime objects for accurate comparison and sorting.
 
-• Refine the user interface and overall user experience.
+To implement the Rule-Based Prioritization Function using a custom function as the key argument in Python's sorted() method to sort by multiple criteria (due date, then priority).
 
-• Implement a robust notification system.
-
+Develop the ability to mark a task as completed by reading the full file content, updating the 'Status' field for the selected task in memory, and then rewriting the entire file contents using with open('tasks.txt', 'w').
