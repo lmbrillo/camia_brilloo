@@ -10,7 +10,7 @@ The entire application will be built exclusively in Python, utilizing its librar
 
 I envision the application being operated as a simple Python script, designed to accept simple inputs to run the program without problems.
 
-Data Storage (Schedules, Deadlinesn etc.) 
+Data Storage (Schedules, Deadlines etc.) 
 
 - All task data will be stored in a single plain text file (tasks.txt).
 
