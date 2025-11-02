@@ -1,0 +1,208 @@
+Student-Friendly Study Planner: A Python-runned Time Management Tool for Students!
+
+1. Problem Statement
+
+Many students today struggle to balance multiple academic responsibilities: Assignments, quizzes, and projects. This is due to poor time management and unorganized study routines.
+In a typical school setting, students often face difficulties deciding which task to prioritize, resulting in missed deadlines, overlapping workloads, and academic stress. 
+This problem is especially common among juniors like me who are still developing learning habits.
+
+The Study Planner project addresses this issue by creating a rule-driven scheduling tool that helps students organize and prioritize their academic tasks systematically.
+Instead of relying on memory or manual lists, this project will:
+
+-- Guide students in inputting and saving their study tasks (such as homework, projects, and reviews).
+
+-- Automatically generate a logical schedule based on due dates and priority levels.
+
+-- Help users track task completion and maintain a sense of academic progress.
+
+By simplifying task management and applying a clear prioritization system, this project aims to reduce confusion, improve productivity, and promote responsible study habits among students.
+
+** A rule-driven scheduling tool is a function in my code that organizes and prioritizes tasks automatically by following a specific set of logical rules or conditions.
+An example of these logical rules are the tasks "Due Date" and "Priority Level". **
+
+2. Project Objectives
+
+-- To develop a Python-based study planner that allows users to input, store, and retrieve their academic tasks in an organized way.
+
+-- To implement a rule-based scheduling function that automatically prioritizes tasks based on due date proximity and priority level, helping students decide which to complete first.
+
+-- To provide a simple, text-based user interface that ensures accessibility and usability without requiring external databases or graphical tools.
+
+-- To enable data persistence through simple text file storage, allowing students to save, update, and review their schedules conveniently.
+
+-- To promote effective time management habits by giving students a structured, logic-based method for planning and tracking their academic workload.
+
+
+3. Planned Features
+
+-- Task Storage System:
+
+All tasks will be stored in a single text file (tasks.txt) to ensure simplicity and accessibility.
+
+This feature solves the problem of scattered or lost information by centralizing all study tasks in one place.
+
+-- Task Input and Management:
+
+The program will prompt users to enter task details such as:
+
+ID (unique identifier)
+
+= Subject
+
+= Due Date (YYYY-MM-DD)
+
+= Estimated Time 
+
+= Priority (1 = High, 3 = Low)
+
+= Status (Pending or Completed)
+
+This structured input format ensures that users record tasks systematically, helping reduce confusion and missed deadlines.
+
+-- Automated Schedule Generation:
+
+The system will apply a rule-based sorting function that arranges tasks first by due date and then by priority.
+
+This addresses the issue of not knowing which task to start first by presenting a clear, automatically organized schedule.
+
+Task Completion Update Feature:
+
+Users can mark tasks as “Completed,” allowing them to monitor progress and maintain motivation when they're tired.
+
+This supports accountability and helps students track how well they are managing their workload.
+
+-- User-Friendly Console Interface:
+
+All interactions occur through simple prompts using input() and print() functions, making the program easy to use even for beginners.
+
+This ensures accessibility for all users without requiring additional installations or advanced technical knowledge.
+
+-- Modifying Tasks:
+
+Users can update existing tasks by entering the task ID and modifying specific details such as the subject, due date, estimated time, priority, or status.
+
+This feature addresses real-world scenarios where schedules change — allowing students to adjust their plans without deleting or re-entering tasks.
+It improves flexibility, accuracy, and helps maintain an up-to-date planner.
+
+-- Rule-based scheduling system:
+
+The Rule-Based Scheduling System is the core logic that determines how the tasks are organized within the planner.
+It follows a set of predefined rules to ensure fairness, efficiency, and consistency when sorting tasks:
+
+= Due Date Rule – Tasks with earlier deadlines are placed first.
+
+= Priority Rule – Among tasks with the same due date, those with higher importance (priority level 1) appear before others.
+
+This system uses Python’s built-in sorting capabilities with a custom rule function that interprets these conditions.
+
+4. Planned Inputs and Outputs
+
+Inputs:
+
+Task details (subject, due date, estimated time, priority, and status).
+
+User commands (e.g., Add Task, View Schedule, Mark Task as Completed).
+
+When the user chooses “Add Task”, the program prompts for the following details:
+
+ex. Output
+
+Enter Task ID: 1
+Enter Subject: English Quiz Review
+Enter Due Date (YYYY-MM-DD): 2025-11-20
+Enter Estimated Time (hours): 3
+Enter Priority (1 = High, 3 = Low): 1
+Enter Status (Pending/Completed): Pending
+
+When the user selects “View Schedule”, the program reads the text file and displays all tasks in their current order:
+
+ex. Output
+
+ID | Subject             | Due Date   | Hours | Priority | Status
+---------------------------------------------------------------
+2  | CS2 Long Quiz Review | 2025-11-15 | 1     | 2         | Pending
+3  | Algebra Homework     | 2025-11-18 | 2     | 1         | Completed
+1  | English Quiz Review  | 2025-11-20 | 3     | 1         | Pending
+
+Tasks are automatically sorted by due date (earliest first) and priority level (1 = highest). However, it leans heavier into due date rather than priority level.
+
+If the user wants to modify a task (for example, change the status of Task 2 to “Completed”), the system prompts:
+
+ex. Output
+
+Enter the Task ID you want to modify: 2
+Enter the new status (Pending/Completed): Completed
+Task updated successfully!
+
+After modification, the updated schedule is displayed:
+
+ID | Subject             | Due Date   | Hours | Priority | Status
+---------------------------------------------------------------
+2  | CS2 Long Quiz Review | 2025-11-15 | 1     | 2         | Completed
+3  | Algebra Homework     | 2025-11-18 | 2     | 1         | Completed
+1  | English Quiz Review  | 2025-11-20 | 3     | 1         | Pending
+
+5. Logic Plan
+
+START PROGRAM
+DISPLAY "Welcome to the Student-Friendly Study Planner!"
+
+LOOP until user chooses to exit:
+    DISPLAY:
+        1 - Add Task
+        2 - View Schedule
+        3 - Modify Task
+        4 - Mark Task as Completed
+        5 - Exit
+
+    PROMPT user for choice → choice
+
+    IF choice == 1 THEN
+        PROMPT for task details (ID, Subject, Due Date, Hours, Priority, Status)
+        FORMAT task data as "ID|Subject|DueDate|Hours|Priority|Status"
+        APPEND task line to "tasks.txt"
+        DISPLAY "Task added successfully!"
+
+    ELSE IF choice == 2 THEN
+        OPEN "tasks.txt" and READ all lines
+        CONVERT each line into task records
+        SORT tasks using RULE-BASED SYSTEM:
+            - First by Due Date (earliest first)
+            - Then by Priority (1 = highest)
+        DISPLAY formatted schedule (ID, Subject, Due Date, Hours, Priority, Status)
+
+    ELSE IF choice == 3 THEN
+        READ all tasks from "tasks.txt"
+        PROMPT for Task ID to modify
+        IF Task ID found THEN
+            PROMPT which field to update
+            PROMPT for new value
+            UPDATE task data
+            WRITE all updated tasks back to file
+            DISPLAY "Task modified successfully!"
+        ELSE
+            DISPLAY "Task ID not found."
+
+    ELSE IF choice == 4 THEN
+        READ all tasks from "tasks.txt"
+        PROMPT for Task ID to mark as completed
+        IF Task ID found THEN
+            CHANGE Status to "Completed"
+            WRITE all updated tasks back to file
+            DISPLAY "Task marked as completed!"
+        ELSE
+            DISPLAY "Task ID not found."
+
+    ELSE IF choice == 5 THEN
+        DISPLAY "Exiting program... Goodbye!"
+        EXIT LOOP
+
+    ELSE
+        DISPLAY "Invalid choice. Please select 1-5."
+
+END LOOP
+END PROGRAM
+
+
+
+
