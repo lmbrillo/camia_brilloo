@@ -41,6 +41,14 @@ All tasks will be stored in a single text file (tasks.txt) to ensure simplicity 
 
 This feature solves the problem of scattered or lost information by centralizing all study tasks in one place.
 
+Justification:
+
+Centralizes data, preventing scattered or lost information.
+
+Literature Support:
+
+Naveed et al. (2021) found that simple storage systems reduce user confusion and increase engagement.
+
 -- Task Input and Management:
 
 The program will prompt users to enter task details such as:
@@ -59,6 +67,14 @@ ID (unique identifier)
 
 This structured input format ensures that users record tasks systematically, helping reduce confusion and missed deadlines.
 
+Justification:
+
+Structured task entry improves organization and deadline awareness.
+
+Literature Support:
+
+Zimmerman (2002) noted that structured recording enhances self-regulation and academic performance.
+
 -- Automated Schedule Generation:
 
 The system will apply a rule-based sorting function that arranges tasks first by due date and then by priority.
@@ -71,11 +87,27 @@ Users can mark tasks as “Completed,” allowing them to monitor progress and m
 
 This supports accountability and helps students track how well they are managing their workload.
 
+Justification:
+
+Removes decision fatigue and provides a clear, organized schedule.
+
+Literature Support:
+
+Bailey & Konstan (2006) found automated prioritization improves productivity and reduces stress.
+
 -- User-Friendly Console Interface:
 
 All interactions occur through simple prompts using input() and print() functions, making the program easy to use even for beginners.
 
 This ensures accessibility for all users without requiring additional installations or advanced technical knowledge.
+
+Justification:
+
+Keeps the program accessible for all students.
+
+Literature Support:
+
+Norman (2013) emphasized that simplicity in design improves usability and adoption.
 
 -- Modifying Tasks:
 
@@ -83,6 +115,14 @@ Users can update existing tasks by entering the task ID and modifying specific d
 
 This feature addresses real-world scenarios where schedules change — allowing students to adjust their plans without deleting or re-entering tasks.
 It improves flexibility, accuracy, and helps maintain an up-to-date planner.
+
+Justification:
+
+Gives flexibility when schedules or deadlines change.
+
+Literature Support:
+
+Ellis & Knaus (2002) highlight that adaptable tools encourage consistent time management.
 
 -- Rule-based scheduling system:
 
@@ -94,6 +134,14 @@ It follows a set of predefined rules to ensure fairness, efficiency, and consist
 = Priority Rule – Among tasks with the same due date, those with higher importance (priority level 1) appear before others.
 
 This system uses Python’s built-in sorting capabilities with a custom rule function that interprets these conditions.
+
+Justification:
+
+Ensures fairness and consistency in scheduling.
+
+Literature Support:
+
+Macan et al. (1990) showed that rule-based planning reduces procrastination and improves control.
 
 4. Planned Inputs and Outputs
 
